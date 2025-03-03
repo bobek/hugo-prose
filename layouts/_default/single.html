@@ -21,6 +21,9 @@
   {{ end }}
 </p>
 {{ partial "translations.html" . }}
+{{ if .Params.translated }}
+      <div class="boxWarning">{{ i18n "machineTranslated" }}</div>
+{{ end }}
 </div>
 
 <div class="article">

@@ -36,3 +36,6 @@
 
 - id: notFound404
   translation: "404 NOT FOUND"
+
+- id: machineTranslated
+  translation: "Tento text byl strojově přeložen. Prosím, podívejte se na původního znění."

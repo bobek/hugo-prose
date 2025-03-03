@@ -36,3 +36,6 @@
 
 - id: notFound404
   translation: "404 NOT FOUND"
+
+- id: machineTranslated
+  translation: "This text was machine translated. Please, check the original version."
