@@ -152,17 +152,23 @@ blockquote {
   margin: auto;
 }
 .categories {
+  a {
+    text-decoration: none;
+    color: #000;
+  }
   text-transform: uppercase;
   font-size: .8em;
 }
-.article-list a, .footer a {
-  text-decoration: none;
-  color: #000;
-}
+/* .article-list a, .footer a { */
+/*   text-decoration: none; */
+/*   color: #000; */
+/* } */
 .article-list h1 {
   a {
     width: 100%;
     display: inline-block;
+    text-decoration: none;
+    color: #000;
   }
   a:hover { color: #71a5d4; }
   border-bottom: 1px solid #ddd;
