@@ -6,6 +6,7 @@
     <li>{{ . | markdownify }}</li>
   </ul>
   {{ end }}
+    <li><a href="https://xn--sr8hvo.ws/previous">←</a> An <a href="https://xn--sr8hvo.ws">IndieWeb Webring</a> 🕸💍 <a href="https://xn--sr8hvo.ws/next">→</a></li>
   <ul>
     {{ range .Site.Menus.footer }}
     <li{{ with .Pre }} class="{{ . }}"{{ end }}{{ with .Identifier }} id="{{ . }}"{{ end }}>
@@ -20,6 +21,5 @@
   </div>
   {{ end }}
   </footer>
-  <script src="{{ relURL "/js/features.js" }}" defer></script>
   </body>
 </html>

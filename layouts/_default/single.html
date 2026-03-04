@@ -7,6 +7,9 @@
 {{ end }}
 <div class="article-meta">
 <h1><span class="title">{{ .Title }}</span></h1>
+{{ with .Params.Subtitle }}
+<h2><span class="title">{{ . }}</span></h2>
+{{ end }}
 {{ with .Params.author }}
 <h3 class="author">
 {{ if reflect.IsSlice . }}{{ delimit . (default " / " $.Site.Params.authorDelimiter) }}{{ else }}{{ . }}{{ end }}
@@ -29,6 +32,7 @@
 <div class="article">
 {{ .Content }}
 </div>
+<!-- {{ partial "backlinks.html" (dict "page" .) }} -->
 </main>
 
 {{ partial "appendix.html" . }}
