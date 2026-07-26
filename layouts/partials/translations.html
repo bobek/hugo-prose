@@ -2,7 +2,7 @@
 <p class="terms">
   {{ i18n "translations" }}:
   {{ range .Translations }}
-    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}: {{ .LinkTitle }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Language.Label }}: {{ .LinkTitle }}</a>
   {{ end }}
 </p>
 {{ end }}
